@@ -1,0 +1,45 @@
+h1 {
+    color : navy;
+}
+
+h4 {
+    color : darkred;
+}
+
+pre {
+    color : navy;
+}
+
+body {
+    background-color: white;
+}
+
+/* center h1, h4 text*/
+h1, h4 {
+    text-align: center;
+}
+
+/* adjust p text a bit to the right */
+p {
+    margin-left: 4em;
+}
+
+a {
+    display:block;
+}
+
+.textStyle {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.lyricsStyle {
+    background-color: lightgrey;
+    border: 2px solid;
+    margin-left: 300px;
+    margin-right: auto;
+    padding: 10px;
+    width: 50%;
+}
