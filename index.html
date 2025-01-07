@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Website by Miguel Rosales">
+    <title>My Website</title>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="click.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="my-info.html">My Info</a>
+            <a href="sub-pages/my-plans.html">My Plans</a>
+            <div class="dropdown">
+                <button class="dropbtn">Song Lyrics
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="song-lyrics/songs/PrimeraCita.html"> Primera Cita </a>
+                    <a href="song-lyrics/songs/QueOndaPerdida.html"> Que Onda Perdida </a>
+                    <a href="song-lyrics/songs/Starlight.html"> Starlight </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="images.html">Images</a>
+                    <a href="videos.html">Videos</a>
+                    <a href="lists.html">Lists</a>
+                    <a href="formating-text.html">Formating Text</a>
+                    <a href="block-vs-inline-tags.html">Block vs Inline Tags</a>
+                    <a href="forms.html">Forms</a>
+                    <a href="tables.html">Tables</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+        <h1>Welcome to my website!</h1>
+    <hr>
+
+    <p>Take a look at my other pages!</p>
+    Click this button, if you dare... <button onClick = "alertButton()"> Click Me </button>
+    <p>Here is more <a href="my-info.html">info</a> about me!</p>
+    <p>Here are <a href="sub-pages/my-plans.html">my plans</a> for the future!</p>
+    <p>Can't get enough of me? Here are different <a href="images.html">images of me</a></p>
+    <p>Here are some of my <a href="videos.html">videos</a> you can check out</p>
+    <p>To check out how I learned HTML, check out the 'More' tab in the navbar above</p>
+    <p>Check out <a href="http://www.google.com" target="_google">Google</a></p>
+
+
+    <p>This is an amazing book by Alex Hormozi! Must Read</p>
+    <img width="480" height="240" src="images/Alex Hormozi Audience Growth Strategies - Google Docs.pdf" alt="book">
+
+    <footer>
+        <br>
+        <hr>
+        <a href="mailto:miguelrosales1264@gmail.com"
+        target="_email" title="Email Me">
+            <h4>Miguel Rosales</h4>
+        </a>
+        <small>&copy; copyright reserved 2025</small>
+    </footer>
+</body>
+</html>

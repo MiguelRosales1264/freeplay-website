@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', cursive;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+a {
+    /* text-decoration: none; */
+    color: black;
+}
+
+h1, h4 {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: darkred;
+}
+
+header {
+    background-color: lightblue;
+}
+
+button {
+    color: black;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight:bolder;
+}
