@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro To CSS3 - Tag Selectors</title>
-
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" 
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
+            crossorigin="anonymous"></script>
+    <script src="javascript/frameLoader.js"></script>
+    <script src="javascript/click.js"></script>
+    
     <style>
 
         /* Tag Selectors */
@@ -13,12 +20,12 @@
         /* color = property */
         /* red = value */
         h1 {
-            color: red;
+            color: blue;
             /* font-size: 32px; */
         }
 
         h2 {
-            color: blue;
+            color: red;
             text-align: center;
         }
 
@@ -27,11 +34,19 @@
             font-weight: bold;
         }
 
+        nav {
+            background-color: navy;
+        }
+
     </style>
 </head>
 <body>
+    <header>
+        <div id="navbar-frame"></div>
 
-    <h1>Intro to CSS3</h1>
+        <h1>Intro to CSS3</h1>
+        <hr>
+    </header>
 
     <p>This is a paragraph, pretty cool huh?</p>
 
@@ -39,5 +54,6 @@
 
     <p>This is another paragraph, even cooler!</p>
     
+    <div id="footer-frame"></div>
 </body>
 </html>

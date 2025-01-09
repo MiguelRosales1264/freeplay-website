@@ -4,40 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images</title>
-    <link rel="stylesheet" href="global.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" 
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
+            crossorigin="anonymous"></script>
+    <script src="javascript/frameLoader.js"></script>
+    <script src="javascript/click.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="my-info.html">My Info</a>
-            <a href="sub-pages/my-plans.html">My Plans</a>
-            <div class="dropdown">
-                <button class="dropbtn">Song Lyrics
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="song-lyrics/songs/PrimeraCita.html"> Primera Cita </a>
-                    <a href="song-lyrics/songs/QueOndaPerdida.html"> Que Onda Perdida </a>
-                    <a href="song-lyrics/songs/Starlight.html"> Starlight </a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">More
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="images.html">Images</a>
-                    <a href="videos.html">Videos</a>
-                    <a href="lists.html">Lists</a>
-                    <a href="formating-text.html">Formating Text</a>
-                    <a href="block-vs-inline-tags.html">Block vs Inline Tags</a>
-                    <a href="forms.html">Forms</a>
-                    <a href="tables.html">Tables</a>
-                </div>
-            </div>
-        </nav>
+        <div id="navbar-frame"></div>
         
         <h1>Images: JPEG, PNG, GIF</h1>
         <hr>
@@ -63,14 +40,6 @@
     <p>This is an amazing view I captured while camping</p>
     <img width="480" height="240" src="images/20220903_072621.jpeg" alt="camping view">
     
-    <footer>
-        <br>
-        <hr>
-        <a href="mailto:miguelrosales1264@gmail.com"
-        target="_email" title="Email Me">
-            <h4>miguelrosales1264@gmail.com</h4>
-        </a>
-        <small>&copy; copyright reserved 2025</small>
-    </footer>
+    <div id="footer-frame"></div>
 </body>
 </html>
