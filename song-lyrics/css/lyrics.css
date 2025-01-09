@@ -1,22 +1,13 @@
-h1 {
+header h1 {
     color : navy;
 }
 
-h4 {
+header h4 {
     color : darkred;
 }
 
 pre {
     color : navy;
-}
-
-body {
-    background-color: white;
-}
-
-/* center h1, h4 text*/
-h1, h4 {
-    text-align: center;
 }
 
 /* adjust p text a bit to the right */
