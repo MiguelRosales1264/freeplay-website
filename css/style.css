@@ -1,11 +1,11 @@
 /* Navbar container */
-#main-nav, #sub-nav {
+nav {
     overflow: hidden;
     background-color: #333;
 }
 
 /* Links inside the navbar */
-#main-nav a, #sub-nav a {
+nav a {
     float: left;
     font-size: 16px;
     color: white;
@@ -33,7 +33,7 @@
 }
 
 /* Add a lightblue background color to navbar links on hover */
-#main-nav a:hover, #sub-nav a:hover, .dropdown:hover .dropbtn {
+nav a:hover, .dropdown:hover .dropbtn {
     background-color: lightgrey;
 }
 
