@@ -10,9 +10,35 @@
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
             crossorigin="anonymous"></script>
     <script src="javascript/frameLoader.js"></script>
+
+    <style>
+        /* p = tag selector */
+        /* color = property */
+        /* red = value */
+        p {
+            /* color name */
+            color: red;
+
+            /* rgb = red, green, blue */
+            color: rgb(0, 0, 255);
+
+            /* #00ff00 = hex color */
+            color: #00ff00;
+        }
+    </style>
 </head>
 <body>
-    <div id="navbar-frame"></div>
-    
+    <header>
+        <div id="navbar-frame"></div>
+
+        <h1>CSS Color</h1>
+        <hr>
+    </header>
+
+    <p style="color: red;">This is red text.</p>
+    <p style="color: rgb(0, 0, 255);">This is blue text.</p>
+    <p style="color: #00ff00;">This is green text.</p>
+
+    <div id="footer-frame"></div>
 </body>
 </html>
