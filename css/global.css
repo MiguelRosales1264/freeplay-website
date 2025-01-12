@@ -1,9 +1,15 @@
-header, footer {
-    font-family: 'Roboto', cursive;
+header, footer{
+    font-family: cursive;
     font-size: 18px;
     margin: 0;
     padding: 0;
     background-color: lightgrey;
+}
+
+body {
+    /* font-family: serif; */
+    margin: 0;
+    padding: 0;
 }
 
 a {

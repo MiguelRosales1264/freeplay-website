@@ -13,20 +13,38 @@
 
     <style>
         
+        /* Tag Selectors */
         h1 {
             text-transform: capitalize;
             text-align: center;
         }
 
         p {
-            text-align: justify;
-            font-weight: bold;
+            text-indent: 20px;
+            font-weight: normal;
         }
 
+        /* Class Selectors */
+        .font-family {
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Complex Selectors */
         p.styling {
             text-align: justify;
-            font-weight: normal;
-            font-style: italic;
+            font-weight: bold;
+            font-family: "Avant Garde", sans-serif;
+        }
+
+        /* Descendant Selectors */
+        p .inner {
+            font-weight: bold;
+            font-size: 24px; /* fixed size / pixels */
+        }
+
+        body {
+            /* font-size: 3vw; */
+            font-size: 3vw; /* 3% of the viewport width, relative / viewport width */
         }
 
     </style>
@@ -58,7 +76,7 @@
     <h3>Font Sizes</h3>
 
     <p class="sizes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Suscipit quaerat molestias ipsam nulla consectetur explicabo 
+        Suscipit quaerat <span class="inner">molestias ipsam nulla</span> consectetur explicabo 
         sequi, cum adipisci necessitatibus veritatis fuga et esse 
         voluptate, ut reprehenderit, nam exercitationem perferendis 
         obcaecati.</p>
