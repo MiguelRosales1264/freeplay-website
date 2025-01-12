@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $("#footer-frame").load("../layouts/footer.html");
+    $("#footer-frame").load("../components/footer.html");
 });
 
 $(document).ready(function(){
-    $("#navbar-frame").load("../layouts/sub-navbar.html");
+    $("#navbar-frame").load("../components/sub-navbar.html");
 });

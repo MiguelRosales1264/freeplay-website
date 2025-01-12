@@ -1,0 +1,16 @@
+{
+    "navigation": [
+        {
+            "name": "Home",
+            "url": "/"
+        },
+        {
+            "name": "My-Info",
+            "url": "/my-info"
+        },
+        {
+            "name": "My-Plans",
+            "url": "/my-plans"
+        }
+    ]
+}
