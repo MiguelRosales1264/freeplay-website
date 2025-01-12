@@ -10,6 +10,35 @@
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
             crossorigin="anonymous"></script>
     <script src="javascript/frameLoader.js"></script>
+
+    <style>
+
+        /* Note that the color of the body is red, but since
+        CSS is top-down processing "blue" overrides "red" in h1 tag selector. 
+        However, the other tags are still red because they inherited from
+        body block tag. */
+        body {
+            color: red;
+            background-color: pink;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            background-color: yellow;
+        }
+
+        header {
+            background-color: lightgray;
+        }
+
+        header h1 {
+            background-color: orangered;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +48,18 @@
         <hr>
     </header>
 
-    
+    <h1>This is header</h1>
+
+    <p>This is a paragraph</p>
+
+    <h2>This is header 2</h2>
+
+    <p>This is a paragraph</p>
+
+    <h3>This is header 3</h3>
+
+    <p>This is a paragraph</p>
+
 
     <div id="footer-frame"></div>
 </body>
