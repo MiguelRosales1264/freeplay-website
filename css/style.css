@@ -35,6 +35,9 @@ nav a {
 /* Add a lightblue background color to navbar links on hover */
 nav a:hover, .dropdown:hover .dropbtn {
     background-color: lightgrey;
+    font-size: 20px;
+    color: #757CDE;
+    transition: all 0.3s;
 }
 
 /* Dropdown content (hidden by default) */

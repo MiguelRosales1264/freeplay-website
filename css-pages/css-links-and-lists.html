@@ -15,23 +15,116 @@
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
             crossorigin="anonymous"></script>
     <script src="javascript/frameLoader.js"></script>
+
+    <style>
+
+        main a {
+            font-family: "Jersey 15", serif;
+            font-size: 20px;
+            background-color: #ADD8E6;
+            padding: 5px;
+            border-radius: 10px;
+        } 
+
+        /*The order of psuedo classes MATTERS*/
+        /*Think of Love & Hate to remember (L-V-H-A) */
+
+        /*unvisited link*/
+        main a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /*visited link*/
+        main a:visited {
+            color: black;
+        }
+        
+        /*mouse over link*/
+        main a:hover {
+            color: blue;
+            background-color: #ADD8E6;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 30px;
+            transition: all 0.3s;
+        }
+
+        /*selected link*/
+        main a:active {
+            color: yellow;
+            background-color: black;
+            font-weight: bold;
+        }
+
+        /*SVG Arrow*/
+
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        svg:hover {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #arrow-right-solid {
+            fill: red;
+        }
+
+        #arrow-right-solid:hover {
+            fill: blue;
+            transition: all 0.3s ease;
+        }
+
+        /*List Styling*/
+
+        ul li {
+            list-style-type: none;
+            margin: 15px 0;
+        }
+
+    </style>
 </head>
 <body>
+    <!-- Header Container -->
     <header>
         <div id="navbar-frame"></div>
 
         <h1>CSS Styling Links & Lists</h1>
         <hr>
     </header>
-<!-- End Header Container -->
+    <!-- End Header Container -->
 
-<!-- Main Container -->
-<main>
-    
+    <!-- Main Container -->
+    <main>
+        <h1>Intro Pseudo Classes</h1>
+
+        <h2>Link</h2>
+        <a href="http://www.google.com" target="_google">Google Link</a>
+
+        <!-- SVG of Arrow -->
+        <h2>SVG Image</h2>
+        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="arrow-right-solid" d="M9.24564 1.27373L10.2124 0.307002C10.6217 -0.102334 11.2836 -0.102334 11.6886 0.307002L20.1541 8.7681C20.5634 9.17744 20.5634 9.83935 20.1541 10.2443L11.6886 18.7098C11.2793 19.1191 10.6174 19.1191 10.2124 18.7098L9.24564 17.7431C8.83194 17.3294 8.84065 16.6544 9.26306 16.2494L14.5104 11.2503H1.99513C1.41596 11.2503 0.950012 10.7843 0.950012 10.2051V8.81165C0.950012 8.23248 1.41596 7.76653 1.99513 7.76653H14.5104L9.26305 2.76739C8.8363 2.3624 8.82759 1.68743 9.24564 1.27373Z" fill="#E15E2A"/>
+        </svg>
+
+
+        <h2>Lists</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
 
     </main>
-<!-- End Main Container -->
+    <!-- End Main Container -->
 
-<div id="footer-frame"></div>
+    <div id="footer-frame"></div>
 </body>
 </html>
