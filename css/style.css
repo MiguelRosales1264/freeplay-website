@@ -30,6 +30,7 @@ nav a {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+    transition: all 0.3s;
 }
 
 /* Add a lightgrey background color to navbar links on hover */
@@ -61,6 +62,7 @@ nav a:hover, .dropdown:hover .dropbtn {
     text-decoration: none;
     display: block;
     text-align: left;
+    transition: all 0.3s;
 }
 
 /* Add a grey background color to dropdown links on hover */
