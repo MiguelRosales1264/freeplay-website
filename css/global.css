@@ -27,9 +27,10 @@ https://fonts.google.com/
 header, footer{
     font-family: "Jersey 15", cursive;
     font-size: 2vw;
-    margin: 0;
-    padding: 0;
-    background-color: lightgrey;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary);
 }
 
 body {
@@ -45,25 +46,16 @@ main {
 
 a {
     /* text-decoration: none; */
-    color: blue;
-}
-
-header, footer {
-    text-align: center;
-    text-decoration: none;
+    color: var(--secondary);
 }
 
 footer a {
     text-decoration: none;
-    color: darkred;
-}
-
-header {
-    background-color: lightblue;
+    color: var(--secondary);
 }
 
 button {
-    color: black;
+    color: var(--black);
     cursor: pointer;
     font-family: inherit;
     font-weight:bolder;
