@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <!-- Import Google Font  (font-family: "Jersey 15", serif;)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+
+    <!-- Import Global CSS -->
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+
+    <!-- Import jQuery and Frame Loader -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="javascript/frameLoader.js"></script>
+
+    <!-- Flexbox CSS -->
+    <style>
+        /*Flex container*/
+        .flex-container {
+            background-color: #1C90FF;
+            padding: 10px;
+            display: flex;
+
+            /*CSS Properties used for flex containers*/
+
+            /*flex-direction specifies the direction of the flexible items inside the flex container*/
+            /*flex-direction: row | row-reverse | column | column-reverse;*/
+            flex-direction: row; /*default value 1, 2, 3*/
+            /*flex-direction: row-reverse; /*reverse the order of the items 3, 2, 1*/
+            /*flex-direction: column; /*stack the items vertically 1, 2, 3*/
+            /*flex-direction: column-reverse; /*stack the items vertically in reverse order 3, 2, 1*/
+
+            /*flex-wrap specifies whether the flex items should wrap or not, if there is not enough room for them on one line*/
+            /*flex-wrap: wrap | nowrap | wrap-reverse;*/
+            /*flex-wrap: nowrap; /*default value, all items are on one line*/
+            flex-wrap: wrap; /*items wrap to the next line if there is not enough room*/
+            /*flex-wrap: wrap-reverse; /*items wrap in reverse order, instead of flowing at the start of the next line, it flows at the start of the current line, pushing full line down*/
+        
+            /*flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties*/
+            /*flex-flow: <flex-direction> <flex-wrap>;*/
+            flex-flow: row wrap; /*default value*/
+            /*flex-flow: row-reverse wrap; /*reverse the order of the items and wrap them*/
+            /*flex-flow: column wrap; /*stack the items vertically and wrap them*/
+            /*flex-flow: column-reverse wrap; /*stack the items vertically in reverse order and wrap them*/
+            /*flex-flow: row nowrap; /*default value, all items are on one line*/
+            /*flex-flow: row-reverse nowrap; /*reverse the order of the items and keep them on one line*/
+            /*flex-flow: column nowrap; /*stack the items vertically and keep them on one line*/
+            /*flex-flow: column-reverse nowrap; /*stack the items vertically in reverse order and keep them on one line*/
+
+            /*justify-content property is used to align the flex items when they do not use all available space on the main-axis (horizontally)*/
+            /*justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;*/
+            justify-content: flex-start; /*default value, items are positioned at the beginning (left) of the container*/
+            /*justify-content: flex-end; /*items are positioned at the end (right) of the container*/
+            /*justify-content: center; /*items are positioned at the center of the container*/
+            /*justify-content: space-between; /*items are positioned with space between the lines*/
+            /*justify-content: space-around; /*items are positioned with space around (before, between, and after) the lines*/
+            /*justify-content: space-evenly; /*items are positioned with even space between the lines and around the container*/
+            
+            /*align-items property is used to align the flex items when they do not use all available space on the cross-axis (vertically)*/
+            /*align-items: stretch/normal | flex-start | flex-end | center | baseline;*/
+            height: 200px;
+            /*align-items: stretch; /*default value, items are stretched to fit the container*/
+            /*align-items: flex-start; /*items are positioned at the beginning (top) of the container*/
+            /*align-items: flex-end; /*items are positioned at the end (bottom) of the container*/
+            align-items: center; /*items are positioned at the center of the container*/
+            /*align-items: baseline; /*items are positioned at the baseline of the container. The baseline being the line where text sits*/
+
+            /*align-content property is used to align the flex lines when there is extra space in the cross-axis (vertically)*/
+            /*aligh-content is similar to alight-items, but instead of aligning flex items, it aligns flex lines*/
+            /*flex lines are the lines that wrap the flex items when there is not enough space in the flex container*/
+            /*align-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly;*/
+            /*align-content: stretch; /*default value, lines stretch to take up the remaining space*/
+            align-content: flex-start; /*lines are positioned at the beginning (top) of the container*/
+            /*align-content: flex-end; /*lines are positioned at the end (bottom) of the container*/
+            /*align-content: center; /*lines are positioned at the center of the container*/
+            /*align-content: space-between; /*lines are positioned with space between the lines*/
+            /*align-content: space-around; /*lines are positioned with space around (before, between, and after) the lines*/
+            /*align-content: space-evenly; /*lines are positioned with even space between the lines and around the container*/
+            
+            
+        }
+
+        .flex-item {
+            background-color: white;
+            padding: 20px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Container -->
+    <header>
+        <div id="navbar-frame"></div>
+
+        <h1>Flexbox</h1>
+        <hr>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Main Container -->
+    <main>
+        <!-- To start using Flexbox, the first step is to define a flex container -->
+        <!-- The flex container becomes the parent element of the flex items -->
+        <!-- The flex container is defined by setting the display property to flex or inline-flex -->
+        <div class="flex-container">
+            <!-- Flex items are the children of the flex container -->
+            <div class="flex-item">0</div>
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+            <div class="flex-item">7</div>
+            <div class="flex-item">8</div>
+            <div class="flex-item">9</div>
+        </div>
+
+    </main>
+    <!-- End of Main Container -->
+
+    <!-- Footer Container -->
+    <div id="footer-frame"></div>
+</body>
+</html>
