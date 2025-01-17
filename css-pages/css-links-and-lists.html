@@ -47,7 +47,6 @@
             padding: 5px;
             border-radius: 10px;
             font-size: 30px;
-            transition: all 0.3s ease;
             margin-bottom: 45px;
         }
 
@@ -63,22 +62,22 @@
         svg {
             width: 50px;
             height: 50px;
+            transition: all 0.3s ease;
         }
 
         svg:hover {
             width: 100px;
             height: 100px;
             cursor: pointer;
-            transition: all 0.3s ease;
         }
 
         #arrow-right-solid {
             fill: red;
+            transition: all 0.3s ease;
         }
 
         #arrow-right-solid:hover {
             fill: blue;
-            transition: all 0.3s ease;
         }
 
         /*List Styling*/
@@ -86,6 +85,23 @@
         ul li {
             list-style-type: none;
             margin: 15px 0;
+        }
+
+        .list-image {
+            list-style-type: none;
+        }
+
+        .list-image-item {
+            margin: 0;
+            background-image: url("../assets/images/red-star-bullet.png");
+            background-repeat: no-repeat;
+            padding-left: 25px;
+            padding-top: 10px;
+            background-position: 0px 9px;
+
+            /*Each list item is a block level tag, uncomment background color to see*/
+            /*background-color: #ADD8E6;*/
+            margin-bottom: 5px;
         }
 
     </style>
@@ -122,6 +138,20 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+
+        <h2>Styling Lists with Images</h2>
+
+        <ul class="list-image">
+            <li class="list-image-item">Fish</li>
+            <li class="list-image-item">Sticks</li>
+            <li class="list-image-item">Snacks</li>
+        </ul>
+
+        <ol class="list-image">
+            <li class="list-image-item">General</li>
+            <li class="list-image-item">Major</li>
+            <li class="list-image-item">Private</li>
+        </ol>
 
     </main>
     <!-- End Main Container -->
