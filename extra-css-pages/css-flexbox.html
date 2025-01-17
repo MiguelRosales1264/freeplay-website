@@ -21,6 +21,7 @@
             crossorigin="anonymous"></script>
     <script src="javascript/frameLoader.js"></script>
 
+    <!-- CSS Styling for Links -->
     <style>
         a {
             text-decoration: none;
@@ -60,16 +61,16 @@
             /*flex-wrap: wrap | nowrap | wrap-reverse;*/
             /*flex-wrap: nowrap; /*default value, all items are on one line*/
             flex-wrap: wrap; /*items wrap to the next line if there is not enough room*/
-            /*flex-wrap: wrap-reverse; /*items wrap in reverse order, instead of flowing at the start of the next line, it flows at the start of the current line, pushing full line down*/
+            /*flex-wrap: wrap-reverse; /*items wrap in reverse order, instead of flowing from top to bottom, they flow from bottom to top*/
         
             /*flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties*/
             /*flex-flow: <flex-direction> <flex-wrap>;*/
-            flex-flow: row wrap; /*default value*/
+            /*flex-flow: row nowrap; /*default value, all items are on one line*/
+            flex-flow: row wrap; /*items wrap to the next line if there is not enough room*/
             /*flex-flow: row-reverse wrap; /*reverse the order of the items and wrap them*/
+            /*flex-flow: row-reverse nowrap; /*reverse the order of the items and keep them on one line*/
             /*flex-flow: column wrap; /*stack the items vertically and wrap them*/
             /*flex-flow: column-reverse wrap; /*stack the items vertically in reverse order and wrap them*/
-            /*flex-flow: row nowrap; /*default value, all items are on one line*/
-            /*flex-flow: row-reverse nowrap; /*reverse the order of the items and keep them on one line*/
             /*flex-flow: column nowrap; /*stack the items vertically and keep them on one line*/
             /*flex-flow: column-reverse nowrap; /*stack the items vertically in reverse order and keep them on one line*/
 
@@ -86,9 +87,9 @@
             /*align-items: stretch/normal | flex-start | flex-end | center | baseline;*/
             height: 200px;
             /*align-items: stretch; /*default value, items are stretched to fit the container*/
-            /*align-items: flex-start; /*items are positioned at the beginning (top) of the container*/
+            align-items: flex-start; /*items are positioned at the beginning (top) of the container*/
             /*align-items: flex-end; /*items are positioned at the end (bottom) of the container*/
-            align-items: center; /*items are positioned at the center of the container*/
+            /*align-items: center; /*items are positioned at the center of the container*/
             /*align-items: baseline; /*items are positioned at the baseline of the container. The baseline being the line where text sits*/
 
             /*align-content property is used to align the flex lines when there is extra space in the cross-axis (vertically)*/
@@ -156,16 +157,77 @@
         <p>All images were taken from this source <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks: A Guide To Flexbox</a></p>
 
         <h2>Here is the layout of the Flexbox Model</h2>
-        <img src="../assets/images/layouts/flexbox-layout.png" alt="Flexbox Layout" style="width: 75%;">
+        <img src="../assets/images/layouts/flexbox-layout.png" alt="Flexbox Layout Row" style="width: 75%;">
+        
+        <p>It's important to note that the main-axis and cross-axis depends on the flex-direction property.
+        If flex-direction is column, the main-axis would be vertical and the cross-axis would be horizontal</p>
+        
+        <p>Next are the properties for the Flex Container (parent) and Flex Items (children)</p>
 
-        <h2>Flex align-item Property</h2>
+        <h1>Flex Container Properties</h1>
+
+        <h2><code>flex-direction</code></h2>
+        <img src="../assets/images/layouts/flex-direction.png" alt="Flex Direction Property" style="width: 50%;">
+        <p>Flex-direction property specifies the direction of the flexible items inside the flex container</p>
+
+        <h2><code>flex-wrap</code></h2>
+        <img src="../assets/images/layouts/flex-wrap.png" alt="Flex Wrap Property" style="width: 50%;">
+        <p>Flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one line</p>
+
+        <h2><code>flex-flow</code></h2>
+        <p>Flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties. It uses this format -- <code>flex-flow: flex-direction flex-wrap;</code></p>
+
+        <h2><code>justify-content</code></h2>
+        <img src="../assets/images/layouts/flex-justify-content.png" alt="Flex justify-content Property" style="width: 50%;">
+        <p>Justify-content property is used to align the flex items when they do not use all available space on the main-axis. Either horizontally or vertically based on the flex-direction property.</p>
+
+        <h2><code>align-item</code></h2>
         <img src="../assets/images/layouts/flex-align-items.png" alt="Flex align-items Property" style="width: 50%;">
+        <p>Align-items property is used to align the flex items when they do not use all available space on the cross-axis. Think of it as the <code>justify-content</code> version for the cross-axis (perpindicular to the main-axis).</p>
 
-        <h2>Flex align-content Property</h2>
+        <h2><code>align-content</code></h2>
         <img src="../assets/images/layouts/flex-align-content.png" alt="Flex align-content Property" style="width: 50%;">
+        <p>Align-content property is used to align the flex lines when there is extra space in the cross-axis. Either vertically or horizontally based on the flex-direction property. Similar to how <code>justify-content</code> aligns individual items within the main-axis</p>
+        <p>Note: This property only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-wrap is set to its default value, no-wrap) will not reflect align-content.</p>
 
-        <h2>Flex gap Property</h2>
+        <h2><code>gap, row-gap, column-gap</code></h2>
         <img src="../assets/images/layouts/flex-gap.png" alt="Flex gap Property" style="width: 50%;">
+        <p>Gap property is used to create space between the flex items. It follows this format:
+            <code>gap: row-gap column-gap;</code> where row-gap is the space between rows and column-gap is the space between columns</p>
+        <p>Note: the <code>gap</code> property explicitly controls the space between flex items. It applies that spacing <em>only between items</em> not on the outer edges</p>
+
+        <h1>Flex Item Properties</h1>
+
+        <h2><code>order</code></h2>
+        <img src="../assets/images/layouts/flex-order.png" alt="Flex Order Property" style="width: 50%;">
+        <p>Order property is used to define the order of the flex items. It follows this format:
+            <code>order: number;</code> where number is the order of the item. The default value is 0</p>
+        
+        <h2><code>flex-grow</code></h2>
+        <img src="../assets/images/layouts/flex-grow.png" alt="Flex Grow Property" style="width: 50%;">
+        <p>Flex-grow property is used to specify how much the item will grow relative to the rest of the flexible items inside the same container. It follows this format:
+            <code>flex-grow: number;</code> where number is the ratio of the item's growth compared to the other items. The default value is 0</p>
+        
+        <h2><code>flex-shrink</code></h2>
+        <img src="../assets/images/layouts/flex-shrink.png" alt="Flex Shrink Property" style="width: 50%;">
+        <p>Flex-shrink property is used to specify how much the item will shrink relative to the rest of the flexible items inside the same container. It follows this format:
+            <code>flex-shrink: number;</code> where number is the ratio of the item's shrinkage compared to the other items. The default value is 1</p>
+
+        <h2><code>flex-basis</code></h2>
+        <img src="../assets/images/layouts/flex-basis.png" alt="Flex Basis Property" style="width: 50%;">
+        <p>Flex-basis property is used to specify the initial size of the item before any available space is distributed. It follows this format:
+            <code>flex-basis: length | auto;</code> where length is the size of the item and auto is the default value</p>
+
+        <h2><code>flex</code></h2>
+        <img src="../assets/images/layouts/flex.png" alt="Flex Property" style="width: 50%;">
+        <p>Flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. It follows this format:
+            <code>flex: flex-grow flex-shrink flex-basis;</code> where flex-grow, flex-shrink, and flex-basis are the values for the respective properties</p>
+
+        <h2><code>align-self</code></h2>
+        <img src="../assets/images/layouts/flex-align-self.png" alt="Flex Align Self Property" style="width: 50%;">
+        <p>Align-self property is used to override the align-items property for individual flex items. It follows this format:
+            <code>align-self: auto | flex-start | flex-end | center | baseline | stretch;</code> where auto is the default value</p>
+
 
     </main>
     <!-- End of Main Container -->
