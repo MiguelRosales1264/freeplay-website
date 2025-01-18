@@ -44,10 +44,9 @@
         /*Flex container*/
         .flex-container {
             background-color: var(--secondary);
-            padding: 10px;
             border: 5px solid var(--primary);
             font-weight: bold;
-            height: 200px;
+            height: 300px;
             display: flex;
 
             /*CSS Properties used for flex containers*/
@@ -107,7 +106,8 @@
             
             /*gap property is used to create space between the flex items*/
             /*gap: row-gap column-gap;*/
-            gap: 10px 20px; /*10px space between rows and 20px space between columns*/
+            gap: 0; /*default value, no space between rows and columns*/
+            /*gap: 10px 20px; /*10px space between rows and 20px space between columns*/
             /*gap: 10px; /*10px space between rows and columns*/
             /*row-gap: 10px; /*10px space between rows*/
             /*column-gap: 20px; /*20px space between columns*/
@@ -116,17 +116,21 @@
         .flex-item {
             background-color: white;
             padding: 20px;
-            margin: 5px;
             text-align: center;
+            border-radius: 15px;
+        }
+
+        #item1 {
+            background-color: rgb(192, 239, 255);
             display: flex;
 
             /*CSS Properties used for flex items*/
             
             /*order property is used to define the order of the flex items*/
             /*order: number;*/
-            /*order: 0; /*default value*/
+            order: 0; /*default value*/
             /*order: 1; /*order of 1*/
-            order: 2; /*order of 2*/
+            /*order: 2; /*order of 2*/
             /*order: 3; /*order of 3*/
 
             /*flex-grow property is used to specify how much the item will grow relative to the rest of the flexible items inside the same container*/
@@ -164,6 +168,22 @@
             /*align-self: baseline; /*item is positioned at the baseline of the container. The baseline being the line where text sits*/
             /*align-self: stretch; /*item is stretched to fit the container*/
         }
+
+        #item0 {
+            background-color: rgb(255, 192, 203);
+        }
+
+        #item2 {
+            background-color: rgb(192, 255, 192);
+        }
+
+        #item3 {
+            background-color: rgb(255, 255, 192);
+        }
+
+        #item4 {
+            background-color: rgb(192, 192, 255);
+        }
     </style>
 </head>
 <body>
@@ -183,16 +203,36 @@
         <!-- The flex container is defined by setting the display property to flex or inline-flex -->
         <div class="flex-container">
             <!-- Flex items are the children of the flex container -->
-            <div class="flex-item">0</div>
-            <div class="flex-item">1</div>
-            <div class="flex-item">2</div>
-            <div class="flex-item">3</div>
-            <div class="flex-item">4</div>
-            <div class="flex-item">5</div>
-            <div class="flex-item">6</div>
-            <div class="flex-item">7</div>
-            <div class="flex-item">8</div>
-            <div class="flex-item">9</div>
+            <div class="flex-item" id="item0">0</div>
+            <div class="flex-item" id="item1">1</div>
+            <div class="flex-item" id="item2">2</div>
+            <div class="flex-item" id="item3">3</div>
+            <div class="flex-item" id="item4">4</div>
+            <div class="flex-item" id="item0">0</div>
+            <div class="flex-item" id="item1">1</div>
+            <div class="flex-item" id="item2">2</div>
+            <div class="flex-item" id="item3">3</div>
+            <div class="flex-item" id="item4">4</div>
+            <div class="flex-item" id="item0">0</div>
+            <div class="flex-item" id="item1">1</div>
+            <div class="flex-item" id="item2">2</div>
+            <div class="flex-item" id="item3">3</div>
+            <div class="flex-item" id="item4">4</div>
+            <div class="flex-item" id="item0">0</div>
+            <div class="flex-item" id="item1">1</div>
+            <div class="flex-item" id="item2">2</div>
+            <div class="flex-item" id="item3">3</div>
+            <div class="flex-item" id="item4">4</div>
+            <div class="flex-item" id="item0">0</div>
+            <div class="flex-item" id="item1">1</div>
+            <div class="flex-item" id="item2">2</div>
+            <div class="flex-item" id="item3">3</div>
+            <div class="flex-item" id="item4">4</div>
+            <div class="flex-item" id="item0">0</div>
+            <div class="flex-item" id="item1">1</div>
+            <div class="flex-item" id="item2">2</div>
+            <div class="flex-item" id="item3">3</div>
+            <div class="flex-item" id="item4">4</div>
         </div>
 
         <hr>
