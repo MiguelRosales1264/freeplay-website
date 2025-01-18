@@ -1,0 +1,94 @@
+main h1, main h2, main h3 {
+    background: #8DB5C0;
+}
+
+main h1 {
+    padding-left: 30px;
+}
+
+main h2 {
+    margin-left: 30px;
+}
+
+main h3 {
+    /* border: width style color */
+    border: 2px solid black;
+}
+
+.dashed-box {
+    border: 4px dashed black;
+    padding: 10px;
+    margin: 50px;
+    text-align: center;
+}
+
+/* Now with divs */
+
+body, section p, hr, section {
+    margin: 0px;
+    padding: 0px;
+}
+
+#div1 {
+    width: 290px;
+    background: white;
+
+    /* Sets all margins to 20px */
+    /* margin: 20px; */
+
+    /* Sets top/bottom margins to 20px, left/right margins to 40px */
+    margin: 10px auto;
+
+    /* margin: top right bottom left */
+    /* margin: 20px 20px 20px 20px; */
+
+    /* Also the same as doing this: */
+    /* margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px; */
+
+    /* Sets all paddings to 20px */
+    /* padding: 20px; */
+
+    /* Sets top/bottom paddings to 20px, left/right paddings to 40px */
+    padding: 200px 50px;
+
+    /* padding: top right bottom left */
+    /* padding: 20px 20px 20px 20px; */
+
+    /* Also the same as doing this: */
+    /* padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px; */
+
+    /* Calculatin Width */
+    /* margin + border + padding + width = total width */
+    border: 5px solid;
+
+
+    background: transparent url("../assets/images/city/miami-trans.png") no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+
+    height: 500px;
+}
+
+.inner-p {
+    padding: 10px;
+    background-color: #00FF00;
+    opacity: 0.7;
+    height: 50%;
+}
+
+#div2 {
+    width: 400px;
+    background: lightcoral;
+    margin: 10px auto;
+
+    /* Manipulating border */
+    border: 5px solid;
+    padding: 20px; /* padding added to make sure text doesn't flow outside of border */
+    border-radius: 15px;
+}
