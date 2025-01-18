@@ -1,0 +1,163 @@
+/* CSS Styling for Links */
+
+a {
+    text-decoration: none;
+    font-family: "Jersey 15", serif;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-size: 25px;
+}
+
+a:active {
+    font-weight: bold;
+}
+
+
+/* Flexbox CSS */
+
+/*Flex container*/
+.flex-container {
+    background-color: var(--secondary);
+    border: 5px solid var(--primary);
+    font-weight: bold;
+    height: 300px;
+    display: flex;
+
+    /*CSS Properties used for flex containers*/
+
+    /*flex-direction specifies the direction of the flexible items inside the flex container*/
+    /*flex-direction: row | row-reverse | column | column-reverse;*/
+    flex-direction: row; /*default value 1, 2, 3*/
+    /*flex-direction: row-reverse; /*reverse the order of the items 3, 2, 1*/
+    /*flex-direction: column; /*stack the items vertically 1, 2, 3*/
+    /*flex-direction: column-reverse; /*stack the items vertically in reverse order 3, 2, 1*/
+
+    /*flex-wrap specifies whether the flex items should wrap or not, if there is not enough room for them on one line*/
+    /*flex-wrap: wrap | nowrap | wrap-reverse;*/
+    /*flex-wrap: nowrap; /*default value, all items are on one line*/
+    flex-wrap: wrap; /*items wrap to the next line if there is not enough room*/
+    /*flex-wrap: wrap-reverse; /*items wrap in reverse order, instead of flowing from top to bottom, they flow from bottom to top*/
+
+    /*flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties*/
+    /*flex-flow: <flex-direction> <flex-wrap>;*/
+    /*flex-flow: row nowrap; /*default value, all items are on one line*/
+    flex-flow: row wrap; /*items wrap to the next line if there is not enough room*/
+    /*flex-flow: row-reverse wrap; /*reverse the order of the items and wrap them*/
+    /*flex-flow: row-reverse nowrap; /*reverse the order of the items and keep them on one line*/
+    /*flex-flow: column wrap; /*stack the items vertically and wrap them*/
+    /*flex-flow: column-reverse wrap; /*stack the items vertically in reverse order and wrap them*/
+    /*flex-flow: column nowrap; /*stack the items vertically and keep them on one line*/
+    /*flex-flow: column-reverse nowrap; /*stack the items vertically in reverse order and keep them on one line*/
+
+    /*justify-content property is used to align the flex items when they do not use all available space on the main-axis (horizontally)*/
+    /*justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;*/
+    justify-content: flex-start; /*default value, items are positioned at the beginning (left) of the container*/
+    /*justify-content: flex-end; /*items are positioned at the end (right) of the container*/
+    /*justify-content: center; /*items are positioned at the center of the container*/
+    /*justify-content: space-between; /*items are positioned with space between the lines*/
+    /*justify-content: space-around; /*items are positioned with space around (before, between, and after) the lines*/
+    /*justify-content: space-evenly; /*items are positioned with even space between the lines and around the container*/
+    
+    /*align-items property is used to align the flex items when they do not use all available space on the cross-axis (vertically)*/
+    /*align-items: stretch/normal | flex-start | flex-end | center | baseline;*/
+    /*align-items: stretch; /*default value, items are stretched to fit the container*/
+    align-items: flex-start; /*items are positioned at the beginning (top) of the container*/
+    /*align-items: flex-end; /*items are positioned at the end (bottom) of the container*/
+    /*align-items: center; /*items are positioned at the center of the container*/
+    /*align-items: baseline; /*items are positioned at the baseline of the container. The baseline being the line where text sits*/
+
+    /*align-content property is used to align the flex lines when there is extra space in the cross-axis (vertically)*/
+    /*aligh-content is similar to alight-items, but instead of aligning flex items, it aligns flex lines*/
+    /*flex lines are the lines that wrap the flex items when there is not enough space in the flex container*/
+    /*align-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly;*/
+    /*align-content: stretch; /*default value, lines stretch to take up the remaining space*/
+    align-content: flex-start; /*lines are positioned at the beginning (top) of the container*/
+    /*align-content: flex-end; /*lines are positioned at the end (bottom) of the container*/
+    /*align-content: center; /*lines are positioned at the center of the container*/
+    /*align-content: space-between; /*lines are positioned with space between the lines*/
+    /*align-content: space-around; /*lines are positioned with space around (before, between, and after) the lines*/
+    /*align-content: space-evenly; /*lines are positioned with even space between the lines and around the container*/
+    
+    /*gap property is used to create space between the flex items*/
+    /*gap: row-gap column-gap;*/
+    gap: 0; /*default value, no space between rows and columns*/
+    /*gap: 10px 20px; /*10px space between rows and 20px space between columns*/
+    /*gap: 10px; /*10px space between rows and columns*/
+    /*row-gap: 10px; /*10px space between rows*/
+    /*column-gap: 20px; /*20px space between columns*/
+}
+
+.flex-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#item1 {
+    background-color: rgb(192, 239, 255);
+    display: flex;
+
+    /*CSS Properties used for flex items*/
+    
+    /*order property is used to define the order of the flex items*/
+    /*order: number;*/
+    order: 0; /*default value*/
+    /*order: 1; /*order of 1*/
+    /*order: 2; /*order of 2*/
+    /*order: 3; /*order of 3*/
+
+    /*flex-grow property is used to specify how much the item will grow relative to the rest of the flexible items inside the same container*/
+    /*flex-grow: number;*/
+    flex-grow: 0; /*default value, negative values are invalid*/
+    /*flex-grow: 1; /*item will grow relative to the other items*/
+    /*flex-grow: 2; /*item will grow twice as much as the other items*/
+    /*flex-grow: 3; /*item will grow three times as much as the other items*/
+
+    /*flex-shrink property is used to specify how much the item will shrink relative to the rest of the flexible items inside the same container*/
+    /*flex-shrink: number;*/
+    flex-shrink: 1; /*default value, negative values are invalid*/
+    /*flex-shrink: 2; /*item will shrink twice as much as the other items*/
+    /*flex-shrink: 3; /*item will shrink three times as much as the other items*/
+
+    /*flex-basis property is used to specify the initial size of the item before any available space is distributed*/
+    /*flex-basis: length | auto;*/
+    flex-basis: auto; /*default value*/
+    /*flex-basis: 20px; /*item will have a size of 20px*/
+    /*flex-basis: 100px; /*item will have a size of 100px*/
+    /*flex-basis: 200px; /*item will have a size of 200px*/
+
+    /*flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties*/
+    /*flex: flex-grow flex-shrink flex-basis;*/
+    /*flex: 0 1 auto; /*default value*/
+    /*flex: 1 2 20px; /*item will grow relative to the other items, shrink twice as much as the other items, and have a size of 20px*/
+    /*flex: 2 3 100px; /*item will grow twice as much as the other items, shrink three times as much as the other items, and have a size of 100px*/
+
+    /*align-self property is used to override the align-items property for individual flex items*/
+    /*align-self: auto | flex-start | flex-end | center | baseline | stretch;*/
+    align-self: auto; /*default value*/
+    /*align-self: flex-start; /*item is positioned at the beginning (top) of the container*/
+    /*align-self: flex-end; /*item is positioned at the end (bottom) of the container*/
+    /*align-self: center; /*item is positioned at the center of the container*/
+    /*align-self: baseline; /*item is positioned at the baseline of the container. The baseline being the line where text sits*/
+    /*align-self: stretch; /*item is stretched to fit the container*/
+}
+
+#item0 {
+    background-color: rgb(255, 192, 203);
+}
+
+#item2 {
+    background-color: rgb(192, 255, 192);
+}
+
+#item3 {
+    background-color: rgb(255, 255, 192);
+}
+
+#item4 {
+    background-color: rgb(192, 192, 255);
+}
