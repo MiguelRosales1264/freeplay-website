@@ -23,7 +23,7 @@ a:active {
     background-color: var(--secondary);
     border: 5px solid var(--primary);
     font-weight: bold;
-    height: 300px;
+    min-height: 200px;
     display: flex;
 
     /*CSS Properties used for flex containers*/
