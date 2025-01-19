@@ -1,36 +1,58 @@
-header h1 {
-    color : navy;
-}
-
 header h4 {
-    color : darkred;
+    color : var(--secondary);
 }
 
-pre {
+.lyrics-box {
     color : navy;
 }
 
-/* adjust p text a bit to the right */
-p {
-    margin-left: 4em;
+/* Lyrics Header */
+.lyrics-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 10px 10px 0 0;
 }
 
-a {
-    display:block;
+/*Lyrics buttons*/
+.lyrics-button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
-.textStyle {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
+.lyrics-button:hover {
+    font-size: 1.1em;
 }
 
-.lyricsStyle {
+.lyrics-button:active {
+    background-color: var(--white);
+    color: var(--primrary);
+}
+
+/*Lyrics style*/
+.lyrics-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: lightgrey;
     border: 2px solid;
-    margin-left: 300px;
-    margin-right: auto;
-    padding: 10px;
+}
+
+.lyrics-text {
+    font-weight: bold;
+    /* width: calc(100% - 25%); */
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: var(--white);
+    /* padding: 20px 25%; */
+    display: table;
+    table-layout: fixed;
     width: 50%;
+    white-space: pre-wrap;
+    text-align: center;
 }

@@ -9,9 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 
+    <!-- Import CSS -->
     <link rel="stylesheet" href="css/lyrics.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Import JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" 
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
             crossorigin="anonymous"></script>
@@ -38,139 +42,142 @@
 <!-- Main Container -->
 <main>
 
-    <button id="lyricsButton" onclick="toggleLyrics()"> Hide Lyrics </button>
-    <button id="changeColorButton" onclick="changeColor()"> Change Color </button>
+    <div class="lyrics-header">
+        <h1><b>Lyrics:</b></h1>
 
-    <p> 
-        <audio controls style="margin-left: 150px">
-            <source src="music/Starlight.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="lyrics-audio">
+            <audio controls style="margin-left: 150px">
+                <source src="music/Starlight.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
-        <br>
+        <div class="lyrics-buttons">
+            <button class="lyrics-button" onclick="toggleLyrics()">Hide Lyrics</button>
+            <button class="lyrics-button" onclick="changeColor()">Change Color</button>
+        </div>
 
-        <b> Lyrics: </b>
-    </p>
+    </div>
 
-    <pre id="lyrics" class="lyricsStyle">
-        <b>
-            It's hard to hate on the truth I'm livin'
-            Enough man hate with the lies instead
+    <pre class="lyrics-box">
+        <p class="lyrics-text">
+It's hard to hate on the truth I'm livin'
+Enough man hate with the lies instead
 
-            Countin' cash with the phone to my ear
-            I feel like Meek on a private jet
+Countin' cash with the phone to my ear
+I feel like Meek on a private jet
 
-            Life or death
-            Five-five, eyes, thighs, potential wifey
+Life or death
+Five-five, eyes, thighs, potential wifey
 
-            Industry, respected highly
-            In the street, protected
+Industry, respected highly
+In the street, protected
 
-            I do know my man but I don't trust him
-            Trust that, P's in the trap, disgusting
-            Stick with the stick, PVA, PDA
+I do know my man but I don't trust him
+Trust that, P's in the trap, disgusting
+Stick with the stick, PVA, PDA
 
-            Kiss that in public
-            South London, where I made my
-            South London's where I made my first hundred
-            Elastic bands, plastic bags
-            Two in the blue like cheese and onion
+Kiss that in public
+South London, where I made my
+South London's where I made my first hundred
+Elastic bands, plastic bags
+Two in the blue like cheese and onion
 
-            In Jamaica, quick vacation, travellin' my pastime
-            'Nough pollution in the ends,
-            I flew back yard 'cah I wanna see starlight
+In Jamaica, quick vacation, travellin' my pastime
+'Nough pollution in the ends,
+I flew back yard 'cah I wanna see starlight
 
-            Eritrean, skin tone cinnamon,
-            I think I found my princess
-            My empress still gonna impress
-            I know them man talk on the kid but
+Eritrean, skin tone cinnamon,
+I think I found my princess
+My empress still gonna impress
+I know them man talk on the kid but
 
-            It's hard to hate on the truth I'm livin'
-            Enough man hate with the lies instead
+It's hard to hate on the truth I'm livin'
+Enough man hate with the lies instead
 
-            Countin' cash with the phone to my ear
-            I feel like Meek on a private jet
+Countin' cash with the phone to my ear
+I feel like Meek on a private jet
 
-            Life or death
-            Five-five, eyes, thighs, potential wifey
+Life or death
+Five-five, eyes, thighs, potential wifey
 
-            Industry, respected highly
-            In the street, protected
+Industry, respected highly
+In the street, protected
 
-            Any girl that I'm dating knows
-            Bags that I buy come filled with fifties
-            She a ten out of ten on a bad day
-            Public affection, I tell her, "Come kiss me"
+Any girl that I'm dating knows
+Bags that I buy come filled with fifties
+She a ten out of ten on a bad day
+Public affection, I tell her, "Come kiss me"
 
-            I like mine obsessed, clingy
-            If she don't miss me, miss me
-            If she don't miss me, history
-            If she don't miss me, it's a mystery
+I like mine obsessed, clingy
+If she don't miss me, miss me
+If she don't miss me, history
+If she don't miss me, it's a mystery
 
-            G17 in the party, tipsy
-            Don't drink, that's risky
-            Focus, shells gonna land like Disney
-            And put 'em down under, Sydney
+G17 in the party, tipsy
+Don't drink, that's risky
+Focus, shells gonna land like Disney
+And put 'em down under, Sydney
 
-            That's bait, I'll donate both my kidneys
-            True love, what the kid needs
-            And a girl from the Westest Indies
-            I know them man talk on the kid but
+That's bait, I'll donate both my kidneys
+True love, what the kid needs
+And a girl from the Westest Indies
+I know them man talk on the kid but
 
-            It's hard to hate on the truth I'm livin'
-            Enough man hate with the lies instead
+It's hard to hate on the truth I'm livin'
+Enough man hate with the lies instead
 
-            Countin' cash with the phone to my ear
-            I feel like Meek on a private jet
+Countin' cash with the phone to my ear
+I feel like Meek on a private jet
 
-            Life or death
-            Five-five, eyes, thighs, potential wifey
+Life or death
+Five-five, eyes, thighs, potential wifey
 
-            Industry, respected highly
-            In the street, protected
+Industry, respected highly
+In the street, protected
 
-            In this world that I'm in
-            How you wanna take pics with the belts and the ring
-            But don't help in the gym?
+In this world that I'm in
+How you wanna take pics with the belts and the ring
+But don't help in the gym?
 
-            'Nough girls dating their biggest haters
-            How her boyfriend don't want her to win?
+'Nough girls dating their biggest haters
+How her boyfriend don't want her to win?
 
-            Like reh
+Like reh
 
-            And why my girlfriend never wanna see me have a good time out
-            if she ain't there?
-            
-            Yeah, yeah (Fly, fly me to the moon)
+And why my girlfriend never wanna see me have a good time out
+if she ain't there?
 
-            Fly me to the moon, let me get some space
-            Seein' them stars on her private story
-            I dust that chick,
-            she got no grace
-            (let me see what spring is like on Jupiter, Jupiter)
-            
-            See her ex man, she got no taste
-            Hip dip, she got no waist
-            Body snatched, serving face (in other words, hold my hand)
+Yeah, yeah (Fly, fly me to the moon)
 
-            Hold my hand, personal trainer
-            Frequent flyer badge, she tone and tan (in other words)
-            Free my gang, 013's and 020's (darlin, kiss me)
-            Oh, God knows I miss my bros
-            I just got a call from jail on the phone and that might
-            
-            (Fill my heart with song and let me sing forevermore
-            You are all I long for
-            All I worship and adore
-            In other words, please be true
-            In other words, I love you
-            Well, in other words, I love you)
-        </b>
+Fly me to the moon, let me get some space
+Seein' them stars on her private story
+I dust that chick,
+she got no grace
+(let me see what spring is like on Jupiter, Jupiter)
+
+See her ex man, she got no taste
+Hip dip, she got no waist
+Body snatched, serving face (in other words, hold my hand)
+
+Hold my hand, personal trainer
+Frequent flyer badge, she tone and tan (in other words)
+Free my gang, 013's and 020's (darlin, kiss me)
+Oh, God knows I miss my bros
+I just got a call from jail on the phone and that might
+
+(Fill my heart with song and let me sing forevermore
+You are all I long for
+All I worship and adore
+In other words, please be true
+In other words, I love you
+Well, in other words, I love you)
+        </p>
         </pre>
 
         </main>
-<!-- End Main Container -->
+    <!-- End Main Container -->
 
-<div id="footer-frame"></div>
+    <div id="footer-frame"></div>
 </body>
 </html>

@@ -9,9 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 
+    <!-- Import CSS -->
     <link rel="stylesheet" href="css/lyrics.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Import JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" 
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
             crossorigin="anonymous"></script>
@@ -28,7 +32,6 @@
             <a href="https://www.youtube.com/watch?v=jhMiIUb2GEA" target="_youtube">Watch the video</a>
         </nav>
 
-        <h4> Miguel Rosales </h4>
         <h1> Primera Cita </h1>
         <h4> By Carin Leon </h4>
         <hr>
@@ -38,70 +41,72 @@
 <!-- Main Container -->
 <main>
 
-    <button id="lyricsButton" onclick="toggleLyrics()"> Hide Lyrics </button>
-    <button id="changeColorButton" onclick="changeColor()"> Change Color </button>
+    <div class="lyrics-header">
+        <h1><b>Letra:</b></h1>
 
-    <p>
-        <audio controls style="margin-left: 150px">
-            <source src="music/PrimeraCita.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="lyrics-audio">
+            <audio controls style="margin-left: 150px">
+                <source src="audio/PrimeraCita.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
+        <div class="lyrics-buttons">
+            <button class="lyrics-button" onclick="toggleLyrics()">Hide Lyrics</button>
+            <button class="lyrics-button" onclick="changeColor()">Change Color</button>
+        </div>
+    </div>
 
-        <br>
+    <pre class="lyrics-box">
+        <p class="lyrics-text">
+Te vi, me viste, al principio fue una broma
+Luego la verdad se asoma, intercambiamos sonrisas
 
-        <b> Letra: </b>
-    </p>
+Pasó algún tiempo, poco menos de una hora
+Y por debajo la mesa tu tacón tocó mi bota
 
-    <pre id="lyrics" class="lyricsStyle">
-        <b>
-        Te vi, me viste, al principio fue una broma
-        Luego la verdad se asoma, intercambiamos sonrisas
+Fue más sencillo que hacer la tabla del uno
+Y a la hora del desayuno ya sabía que te amaba
 
-        Pasó algún tiempo, poco menos de una hora
-        Y por debajo la mesa tu tacón tocó mi bota
+A las semanas de iniciar con la aventura
+Se nos hizo miel la luna y un concierto pa' Tijuana
 
-        Fue más sencillo que hacer la tabla del uno
-        Y a la hora del desayuno ya sabía que te amaba
+Era prohibido, era imposible
+Pero hicimos lo que se nos dio la gana
 
-        A las semanas de iniciar con la aventura
-        Se nos hizo miel la luna y un concierto pa' Tijuana
+Después de eso nos veíamos casi a diario
+Nuestro amigo el calendario nos dio cuatrocientas citas
 
-        Era prohibido, era imposible
-        Pero hicimos lo que se nos dio la gana
+De tanto amarnos, nos volvimos dos extraños
+No sé quién toma hoy tu mano
 
-        Después de eso nos veíamos casi a diario
-        Nuestro amigo el calendario nos dio cuatrocientas citas
+Ni tú dónde estoy ahorita
 
-        De tanto amarnos, nos volvimos dos extraños
-        No sé quién toma hoy tu mano
+Fue más sencillo que hacer la tabla del uno
+Y a la hora del desayuno ya sabía que te amaba
 
-        Ni tú dónde estoy ahorita
+A las semanas de iniciar con la aventura
+Se nos hizo miel la luna y un concierto pa' Tijuana
 
-        Fue más sencillo que hacer la tabla del uno
-        Y a la hora del desayuno ya sabía que te amaba
+Era prohibido, era imposible
+Pero hicimos lo que se nos dio la gana, yeah
 
-        A las semanas de iniciar con la aventura
-        Se nos hizo miel la luna y un concierto pa' Tijuana
+Pasando el tiempo, analizando la ruptura
+La versión que tiene el lobo no es la de Caperucita
 
-        Era prohibido, era imposible
-        Pero hicimos lo que se nos dio la gana, yeah
+De tanto amarnos, nos volvimos dos extraños
+No sé quién toma hoy tu mano, ni tú dónde estoy ahorita
 
-        Pasando el tiempo, analizando la ruptura
-        La versión que tiene el lobo no es la de Caperucita
+Seguramente para otra que nos veamos
+Repitamos lo de la primera cita
 
-        De tanto amarnos, nos volvimos dos extraños
-        No sé quién toma hoy tu mano, ni tú dónde estoy ahorita
-
-        Seguramente para otra que nos veamos
-        Repitamos lo de la primera cita
-
-        Uh, uh-uh
-        </b>
+Uh, uh-uh
+        </p>
     </pre>
 
     </main>
-<!-- End Main Container -->
+    <!-- End Main Container -->
 
-<div id="footer-frame"></div>
+    <div id="footer-frame"></div>
 </body>
 </html>

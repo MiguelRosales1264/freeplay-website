@@ -9,9 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 
+    <!-- Import CSS -->
     <link rel="stylesheet" href="css/lyrics.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Import JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" 
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" 
             crossorigin="anonymous"></script>
@@ -28,7 +32,6 @@
             <a href="https://www.youtube.com/watch?v=1WPWhghNipM" target="_youtube">Watch the video</a>
         </nav>
         
-        <h4> Miguel Rosales </h4>
         <h1> Qué Onda Perdida </h1>
         <h4> By Gerardo Coronel </h4>
         <hr>
@@ -38,61 +41,63 @@
 <!-- Main Container -->
 <main>
 
-    <button id="lyricsButton" onclick="toggleLyrics()"> Hide Lyrics </button>
-    <button id="changeColorButton" onclick="changeColor()"> Change Color </button>
+    <div class="lyrics-header">
+        <h1><b>Letra:</b></h1>
 
-    <p> 
-        <audio controls style="margin-left: 150px">
-            <source src="music/QueOndaPerdida.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="lyrics-audio">
+            <audio controls style="margin-left: 150px">
+                <source src="music/QueOndaPerdida.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
-        <br>
+        <div class="lyrics-buttons">
+            <button class="lyrics-button" onclick="toggleLyrics()">Hide Lyrics</button>
+            <button class="lyrics-button" onclick="changeColor()">Change Color</button>
+        </div>
+    </div>
 
-        <b> Letra: </b>
-    </p>
+    <pre class="lyrics-box">
+        <p class="lyrics-text">
+¿Qué onda, perdida?
+Soy tu ex, el último de tus amores
+Me tomé el atrevimiento de mandarte flores
+Si las recibes, por favor, sonríe, no llores
 
-    <pre id="lyrics" class="lyricsStyle">
-        <b>
-            ¿Qué onda, perdida?
-            Soy tu ex, el último de tus amores
-            Me tomé el atrevimiento de mandarte flores
-            Si las recibes, por favor, sonríe, no llores
+Ya ves, perdida
+Uno siempre vuelve a donde lo quisieron
+No me bloqueaste del WhatsApp y eso para mí es nuevo
+Me da pensar que podemos comenzar de nuevo
 
-            Ya ves, perdida
-            Uno siempre vuelve a donde lo quisieron
-            No me bloqueaste del WhatsApp y eso para mí es nuevo
-            Me da pensar que podemos comenzar de nuevo
+¿Qué onda, perdida?
+Ya volvió el cabrón que más te ha querido
+Y aunque no quieras saber de mí, te digo
+No te puedo olvidar y la neta tampoco he querido
 
-            ¿Qué onda, perdida?
-            Ya volvió el cabrón que más te ha querido
-            Y aunque no quieras saber de mí, te digo
-            No te puedo olvidar y la neta tampoco he querido
+¿Qué onda, perdida?
+Te me alistas porque hoy te llevo la banda
+Y no me voy a ir de tu casa hasta que salgas
+Hoy te quiero mirar, pa que me digas en la cara
+Que ya no me quieres, que tú no me extrañas
+Y que alguien mejor está ocupando tu cama
 
-            ¿Qué onda, perdida?
-            Te me alistas porque hoy te llevo la banda
-            Y no me voy a ir de tu casa hasta que salgas
-            Hoy te quiero mirar, pa que me digas en la cara
-            Que ya no me quieres, que tú no me extrañas
-            Y que alguien mejor está ocupando tu cama
+¿Qué onda, perdida?
+Ya volvió el cabrón que más te ha querido
+Y aunque no quieras saber de mí, te digo
+No te puedo olvidar y la neta tampoco he querido
 
-            ¿Qué onda, perdida?
-            Ya volvió el cabrón que más te ha querido
-            Y aunque no quieras saber de mí, te digo
-            No te puedo olvidar y la neta tampoco he querido
-
-            ¿Qué onda, perdida?
-            Te me alistas porque hoy te llevo la banda
-            Y no me voy a ir de tu casa hasta que salgas
-            Hoy te quiero mirar, pa que me digas en la cara
-            Que ya no me quieres, que tú no me extrañas
-            Y que alguien mejor está ocupando tu cama
-        </b>
+¿Qué onda, perdida?
+Te me alistas porque hoy te llevo la banda
+Y no me voy a ir de tu casa hasta que salgas
+Hoy te quiero mirar, pa que me digas en la cara
+Que ya no me quieres, que tú no me extrañas
+Y que alguien mejor está ocupando tu cama
+        </p>
     </pre>
 
     </main>
-<!-- End Main Container -->
+    <!-- End Main Container -->
 
-<div id="footer-frame"></div>
+    <div id="footer-frame"></div>
 </body>
 </html>
