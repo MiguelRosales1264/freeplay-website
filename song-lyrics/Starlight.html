@@ -28,39 +28,38 @@
         <div id="navbar-frame"></div>
         
         <!-- <nav style="background-color: darkred; margin-left: 1306px"> -->
-        <nav>
+        <div class="navbar-container">
             <a href="https://www.youtube.com/watch?v=iVWsP3IadBk" target="_youtube">Watch the video</a>
-        </nav>
+        </div>
         
-        <h4> Miguel Rosales </h4>
         <h1> Starlight </h1>
         <h4> By Dave </h4>
         <hr>
     </header>
-<!-- End Header Container -->
+    <!-- End Header Container -->
 
-<!-- Main Container -->
-<main>
+    <!-- Main Container -->
+    <main>
+        <!-- Lyrics Header -->
+        <div class="lyrics-header">
+            <h1><b>Lyrics:</b></h1>
 
-    <div class="lyrics-header">
-        <h1><b>Lyrics:</b></h1>
+            <div class="lyrics-audio">
+                <audio controls style="margin-left: 150px">
+                    <source src="music/Starlight.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
 
-        <div class="lyrics-audio">
-            <audio controls style="margin-left: 150px">
-                <source src="music/Starlight.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <div class="lyrics-buttons">
+                <button class="lyrics-button" onclick="toggleLyrics()">Hide Lyrics</button>
+                <button class="lyrics-button" onclick="changeColor()">Change Color</button>
+            </div>
         </div>
 
-        <div class="lyrics-buttons">
-            <button class="lyrics-button" onclick="toggleLyrics()">Hide Lyrics</button>
-            <button class="lyrics-button" onclick="changeColor()">Change Color</button>
-        </div>
-
-    </div>
-
-    <pre class="lyrics-box">
-        <p class="lyrics-text">
+        <!-- Lyrics -->
+        <pre class="lyrics-box">
+            <p class="lyrics-text">
 It's hard to hate on the truth I'm livin'
 Enough man hate with the lies instead
 
@@ -172,10 +171,9 @@ All I worship and adore
 In other words, please be true
 In other words, I love you
 Well, in other words, I love you)
-        </p>
+            </p>
         </pre>
-
-        </main>
+    </main>
     <!-- End Main Container -->
 
     <div id="footer-frame"></div>

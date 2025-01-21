@@ -1,16 +1,23 @@
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+
 /* Navbar container */
-nav {
+.navbar-content {
     overflow: hidden;
     background-color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1vw;
-    z-index: 1;
 }
 
 /* Links inside the navbar */
-nav a {
+.navbar-content a {
     float: left;
     font-size: 16px;
     color: var(--white);
@@ -40,7 +47,7 @@ nav a {
 }
 
 /* Add a lightgrey background color to navbar links on hover */
-nav a:hover, .dropdown:hover .dropbtn {
+.navbar-content a:hover, .dropdown:hover .dropbtn {
     color: var(--black);
     background-color: var(--white);
     font-size: 20px;

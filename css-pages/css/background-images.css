@@ -1,6 +1,6 @@
-header, #navbar-frame nav {
+header, .navbar-content {
     background-image: url("../../assets/images/nature/white-river-mountain.jpeg");
-    background-position: top;
+    background-position: center;
     background-size: cover;
     color: white;
 }
