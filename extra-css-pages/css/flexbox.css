@@ -161,3 +161,9 @@ a:active {
 #item4 {
     background-color: rgb(192, 192, 255);
 }
+
+/* Flexbox Resources */
+
+.flexbox-summary {
+    display: flex;
+}

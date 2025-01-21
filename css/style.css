@@ -6,6 +6,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 1vw;
+    z-index: 1;
 }
 
 /* Links inside the navbar */

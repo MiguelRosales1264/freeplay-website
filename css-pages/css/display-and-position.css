@@ -1,0 +1,135 @@
+/* Universal selector '*' */
+/* The universal selector selects all elements in the document. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 5px;
+    margin: 5px;
+}
+
+#fixed {
+    width: 600px;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px;
+}
+
+#fluid1 {
+    width: 90%;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+#fluid1-p1 {
+    width: 40%;
+    background-color: lightblue;
+}
+
+#fluid2 {
+    min-width: 500px;
+    max-width: 1200px;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 10px;
+}
+
+#overflow {
+    width: 500px;
+    height: 200px;
+    background-color: lightyellow;
+    padding: 10px;
+    margin: 10px;
+    /* overflow: visbile | hidden | scroll | auto */
+    overflow: auto;
+}
+
+/* Display property */
+/* The display property specifies the type of box an element generates. */
+/* The display property can have one of the following values: */
+/* inline | block | inline-block | none */
+
+/* inline: The element generates one or more inline element boxes. */
+/* block: The element generates a block element box. */
+/* inline-block: The element generates an inline-level block container. */
+/* none: The element generates no box. */
+/* flex: The element generates a block-level flex container. */
+/* grid: The element generates a block-level grid container. */
+/* inline-flex: The element generates an inline-level flex container. */
+/* inline-grid: The element generates an inline-level grid container. */
+/* inline-table: The element generates an inline-level table container. */
+/* table: The element generates a table element box. */
+/* table-caption: The element generates a table caption element box. */
+/* table-column-group: The element generates a table column group element box. */
+/* table-header-group: The element generates a table header group element box. */
+/* table-footer-group: The element generates a table footer group element box. */
+/* table-row-group: The element generates a table row group element box. */
+/* table-cell: The element generates a table cell element box. */
+/* table-column: The element generates a table column element box. */
+/* table-row: The element generates a table row element box. */
+/* float: The element generates a block box for the content and a separate box for the float. */
+
+
+/* Float property */
+#floater {
+    width: 200px;
+    min-height: 200px;
+    background-color: lightblue;
+    padding: 10px;
+    margin-left: 10px;
+    float: right;
+    overflow: auto;
+}
+
+/* Position property */
+
+/* This is the default value. */
+/* The element is positioned according to the normal flow of the document. */
+p.static {
+    position: static;
+    border: 3px solid #73AD21;
+    /*Including top/bottom and/or left/right does not affect the tag*/
+    top: 30px;
+    right: 30px;
+}
+
+/* The element is positioned relative to the browser window/viewport. */
+/* Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. */
+/* The fixed value pulls out the element from the normal flow of the document. Allowing it to be positioned relative to the browser window. */
+/* fixed tags scroll with the rest of the page content. */
+p.fixed {
+    position: fixed;
+    border: 3px solid lightcyan;
+    background-color: whitesmoke;
+    /* use top/bottom and/or left/right to position the tag */
+    top: 60px;
+    left: 25%;
+}
+
+/* The element is positioned relative to it's original position. */
+/* The relative value allows the element to be positioned relative to its normal position. */
+/* Not the same as margin. Since it does not affect the rest of the 
+content in the page. Since it takes it out of the normal 
+flow of the document */
+p.relative {
+    position: relative;
+    border: 3px solid coral;
+    bottom: 30px;
+    left: 50px;
+}
+
+/* The absolute value allows the element to be positioned relative to its nearest positioned ancestor. */
+/* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */  
+/* However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. */
+/* Basically if a parent/ancestor tag above the (child) absolute tag has a position property set (NOT static), the absolute tag will be positioned relative to the parent tag. */
+/* The absolute value DO NOT scroll with the rest of the page content. They stay still */
+p.absolute {
+    position: absolute;
+    border: 3px solid indigo;
+    /* top: 30px; */
+    right: 30px;
+}
+

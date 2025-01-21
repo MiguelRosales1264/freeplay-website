@@ -20,6 +20,7 @@
             crossorigin="anonymous"></script>
     <script src="javascript/frameLoader.js"></script>
 
+    <!-- Import CSS -->
     <link rel="stylesheet" href="css/display-and-position.css">
 </head>
 <body>
@@ -36,9 +37,103 @@
     <main>
     
         <section class="fixed-vs-fluid">
-            <h1>Fixed vs Fluid</h1>
+            <h1>Fixed vs Fluid Widths - The Foundations of Website Layout</h1>
+            <p>There are two main types of widths that you can use when creating a website layout: fixed and fluid. 
+                Fixed widths are set in pixels, and fluid widths are set in percentages.</p>
+
+            <div id="fixed">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quibusdam pariatur modi nostrum qui! Fugiat ipsam facere nam voluptatem possimus commodi, explicabo sequi dicta? Quidem libero ex odit placeat temporibus?</p>
+            </div>
+
+            <p>In fluid layouts, the tag with a set value in percentage will adjust its width according to the size its parent container.</p>
+            <p>Here, the fluid div adjusts to 90% of the body tag width, and the first paragraph adjusts to 40% of the fluid div container.</p>
+            <div id="fluid1">
+                <p id="fluid1-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            </div>
+
+
+            <p>Another way to use fluid layouts is by setting a min and/or max width value.</p>
+            <p>When you do this, the container with those properties with be fluid until it hits either the min or max width value, at which point it will stop adjusting its width.</p>
+            <div id="fluid2">
+                <p id="fluid2-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            </div>
         </section>
 
+        <section class="height-and-overflow">
+            <h1>Height and Overflow</h1>
+
+            <p>When you set a height value on a container, the content inside will not adjust to the height value. Instead, it will overflow out of the container.</p>
+            <p>Here the content overflows the container. To resolve this we use the 'overflow' property</p>
+            <p>The overflow has four values: visible, hidden, scroll, and auto.</p>
+            <div id="overflow">
+                <p id="overflow-p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            </div>
+        </section>
+
+        <section class="float">
+            <h1>Floats</h1>
+            <p>Floats are used to move an element to the left or right, and allow other elements to wrap around it.</p>
+            <p>w3schools link</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">CSS Float</a></li>
+            </ul>
+
+            <div id="floater">
+                <ol>
+                    <li>Tom</li>
+                    <li>Jerry</li>
+                    <li>Butch</li>
+                    <li>Spike</li>
+                </ol>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>    
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique vitae velit tempore reprehenderit quae minima laboriosam laudantium accusamus numquam tenetur voluptates, maiores soluta adipisci repellat quam totam, ipsam assumenda.</p>
+        </section>
+
+        <section class="positions">
+            <h1>Positioning</h1>
+            <p>w3schools link</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">CSS Positioning</a></li>
+            </ul>
+
+            <h1>Position static</h1>
+
+            <p class="static">And so another day begins. The sun rises, the birds sing, and the world is at peace. But not for long. For today is the day that the world will be saved. And it will be saved by a hero. A hero who is brave, strong, and true. A hero who will stop at nothing to defeat the forces of evil. A hero who will fight for justice, for freedom, and for the American way. A hero who will be known as... The Amazing</p>
+
+            <h1>Position fixed</h1>
+
+            <p>yes, it's the one floating on top of the browser window, lmao</p>
+            <p class="fixed">Hurry and claim your LIMITED time deal on the new iPhone 13! Only $1999.97! Get yours today! Not a scam, CLICK HERE NOW</p>
+
+            <h1>Position relative</h1>
+
+            <p class="relative">And so another day begins. The sun rises, the birds sing, and the world is at peace. But not for long. For today is the day that the world will be saved. And it will be saved by a hero. A hero who is brave, strong, and true. A hero who will stop at nothing to defeat the forces of evil. A hero who will fight for justice, for freedom, and for the American way. A hero who will be known as... The Amazing</p>
+
+            <h1>Position absolute</h1>
+
+            <p class="absolute">And so another day begins. The sun rises, the birds sing, and the world is at peace. But not for long. For today is the day that the world will be saved. And it will be saved by a hero. A hero who is brave, strong, and true. A hero who will stop at nothing to defeat the forces of evil. A hero who will fight for justice, for freedom, and for the American way. A hero who will be known as... The Amazing</p>
+        </section>
     </main>
     <!-- End Main Container -->
 
