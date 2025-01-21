@@ -30,7 +30,7 @@ https://fonts.google.com/
 
 header, footer{
     font-family: "Jersey 15", cursive;
-    font-size: 2vw;
+    font-size: 1.5em;
     text-align: center;
     text-decoration: none;
     color: var(--white);
