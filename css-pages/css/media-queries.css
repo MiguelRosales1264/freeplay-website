@@ -1,0 +1,35 @@
+* {margin: 0;}
+
+main {
+    margin: 10px auto;
+    padding: 30px;
+    width: 600px;
+    margin-top: 0px;
+    background-color: gold;
+}
+
+p {
+    margin-top: 10px;
+}
+
+@media (max-width: 350px) {
+    main {
+        background-color: lightblue;
+    };
+}
+
+@media (min-width: 600px) {
+    main {
+        background-color: lightcoral;
+    };
+}
+
+@media (min-width: 800px) {
+    main {
+        background: url("../../assets/images/nature/Reeds-in-Wind-Cinemagraph.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 400px;
+    };
+}
+
