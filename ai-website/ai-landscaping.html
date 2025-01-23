@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Landscaping</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/ai-landscaping.css"/>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <img src="../assets/svg/burger-bar.svg" alt="Menu">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to AI Landscaping</h1>
+        <p>Your dream landscape, our expertise</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Landscape Design</h3>
+            <p>Creating beautiful and functional outdoor spaces.</p>
+        </div>
+        <div class="service-item">
+            <h3>Garden Maintenance</h3>
+            <p>Keeping your garden lush and healthy all year round.</p>
+        </div>
+        <div class="service-item">
+            <h3>Tree Care</h3>
+            <p>Professional care for your trees and shrubs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@ailandscaping.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2023 AI Landscaping. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.navbar ul');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

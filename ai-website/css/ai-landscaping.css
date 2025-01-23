@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar li {
+    margin: 0 1rem;
+}
+.navbar a {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .burger {
+display: none;
+cursor: pointer;
+}
+.navbar .burger img {
+width: 30px;
+height: 30px;
+}
+@media (max-width: 768px) {
+.navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+}
+.navbar ul.active {
+    display: flex;
+}
+
+.navbar .burger {
+    display: flex;
+    justify-content: flex-end;
+}
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('https://via.placeholder.com/1500x500');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.services .service-item {
+    margin: 1rem 0;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact p {
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        padding: 3rem 1rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .services h2 {
+        font-size: 1.5rem;
+    }
+    .services .service-item h3 {
+        font-size: 1.2rem;
+    }
+    .services .service-item p {
+        font-size: 1rem;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    .contact p {
+        font-size: 1rem;
+    }
+}
